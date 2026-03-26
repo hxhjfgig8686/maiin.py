@@ -61,7 +61,7 @@ def fetch_ivasms_messages_last_hour(range_id: str):
  return {"sms_list": sms_list, "numbers": numbers}
 
 if __name__ == "__main__":
- RANGE_ID = "PASTE_RANGE_ID_HERE" # نفس id اللي عندك في Network
+ RANGE_ID = "1" # نفس id اللي عندك في Network
  while True:
  data = fetch_ivasms_messages_last_hour(RANGE_ID)
  print(data)
